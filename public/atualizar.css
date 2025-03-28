@@ -1,0 +1,133 @@
+/* Resetando estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Fundo com efeito neon */
+body {
+    background: radial-gradient(circle at top, #2a2a3a, #12121a);
+    color: #e0e0e0;
+    padding: 20px;
+}
+
+/* Cabeçalho estilizado */
+header {
+    background: linear-gradient(135deg, #6a1b9a, #9c27b0);
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(156, 39, 176, 0.6);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 18px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+/* Container futurista */
+.container {
+    background: rgba(44, 44, 44, 0.9);
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(156, 39, 176, 0.5);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+/* Título com efeito de brilho */
+h1 {
+    color: #9c27b0;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: glow 1.5s infinite alternate;
+}
+
+/* Inputs e botões */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Botão futurista */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(135deg, #6a1b9a, #9c27b0);
+    color: white;
+    box-shadow: 0 0 10px rgba(156, 39, 176, 0.5);
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #9c27b0, #e91e63);
+    box-shadow: 0 0 15px rgba(233, 30, 99, 0.6);
+    transform: scale(1.05);
+}
+
+/* Animação neon */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #9c27b0, 0 0 10px #9c27b0;
+    }
+    to {
+        text-shadow: 0 0 10px #e91e63, 0 0 20px #e91e63;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+}

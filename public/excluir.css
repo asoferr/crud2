@@ -1,0 +1,133 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Fundo estilizado */
+body {
+    background: radial-gradient(circle at top, #2a2a3a, #12121a);
+    color: #e0e0e0;
+    padding: 20px;
+}
+
+/* Cabeçalho com efeito neon */
+header {
+    background: linear-gradient(135deg, #6a1b9a, #9c27b0);
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(156, 39, 176, 0.6);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 18px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+/* Container estilizado */
+.container {
+    background: rgba(44, 44, 44, 0.9);
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(156, 39, 176, 0.5);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+/* Título neon */
+h1 {
+    color: #e91e63;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: glow 1.5s infinite alternate;
+}
+
+/* Campo de entrada */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Botão de exclusão com efeito */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ff1744, #d50000);
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 23, 68, 0.5);
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #d50000, #ff1744);
+    box-shadow: 0 0 15px rgba(255, 23, 68, 0.7);
+    transform: scale(1.05);
+}
+
+/* Animação neon */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #e91e63, 0 0 10px #e91e63;
+    }
+    to {
+        text-shadow: 0 0 10px #ff1744, 0 0 20px #ff1744;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+}
